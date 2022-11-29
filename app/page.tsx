@@ -1,55 +1,24 @@
-import Image from 'next/image'
-
 export default function Home() {
-  return (
-    <div>
-      <main>
-        <h1 className="text-3xl font-bold underline">
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
+   return (
+      <>
+         <h1 className="text-3xl font-bold text-center my-8">Clima</h1>
+         <div className="grid place-content-center">
+            <label
+               htmlFor="Seach"
+               className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+            >
+               <input
+                  type="text"
+                  id="Seach"
+                  placeholder="Buscar ciudad"
+                  className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+               />
 
-        <p>
-          Get started by editing{' '}
-          <code>app/page.tsx</code>
-        </p>
-
-        <div>
-          <a href="https://beta.nextjs.org/docs">
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"           
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>            
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
+               <span className="absolute left-3 top-2 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs">
+                  Buscar ciudad...
+               </span>
+            </label>
+         </div>
+      </>
+   )
 }
