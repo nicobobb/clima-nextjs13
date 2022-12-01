@@ -2,12 +2,13 @@
 
 import { useState } from 'react'
 import { BsSearch } from 'react-icons/bs'
+import Fetch from './Fetch'
 
 const Form = () => {
    const [city, setCity] = useState('')
 
    const fetchWeather = (e: any) => {
-      e.preventDefault()
+      e.preventDefault()       
    }
 
    return (
